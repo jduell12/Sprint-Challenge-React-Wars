@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import Character from './Character'
 
 const CharacterCardStyled = styled.div`
-    
+    padding: 3% 10%;
 
 `
 
