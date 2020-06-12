@@ -35,7 +35,6 @@ const App = () => {
 
   return (
     <AppStyled className="App">
-      <h1 className="Header">Characters</h1>
       <CharacterCard characterList={characterList}/>
     </AppStyled>
   );

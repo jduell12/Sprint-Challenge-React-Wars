@@ -6,7 +6,7 @@ export default function CharacterBDay(props){
 
     const StyledBday = styled.p`
        font-size: 1.5rem;
-       
+       padding: 0 1%;
     `
     return(
         <StyledBday>{bday}</StyledBday>

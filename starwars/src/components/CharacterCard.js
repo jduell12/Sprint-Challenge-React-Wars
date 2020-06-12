@@ -7,6 +7,10 @@ const CharacterCardStyled = styled.div`
 
 `
 
+const StyledH1 = styled.h1`
+    color: white;
+`
+
 export default function CharacterCard(props){
     const {characterList} = props;
 
@@ -38,6 +42,7 @@ export default function CharacterCard(props){
 
     return (
         <CharacterCardStyled>
+            <StyledH1>Characters</StyledH1>
             {
                 mapCharacterNames(characterList).map((name, index) => {
                     return <Character name={name} bday ={mapCharacterBdays(characterList)[index]}/>
