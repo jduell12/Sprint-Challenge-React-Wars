@@ -5,7 +5,7 @@ export default function CharacterName(props){
     const {name} = props;
 
     const StyledName = styled.h1`
-        text-align:left;
+       padding: 0 3%;
     `
 
     return (
