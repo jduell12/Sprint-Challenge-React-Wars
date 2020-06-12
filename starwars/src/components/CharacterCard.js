@@ -28,20 +28,19 @@ export default function CharacterCard(props){
 
         Object.values(props).map((values, index) => {
             Object.keys(props[index]).map(key => {
-                if( key === 'birthday'){
+                if( key === 'birth_year'){
                     bdays.push(props[index][key]);
                 }
             })
         })
-
         return bdays;
     }
 
     return (
         <CharacterCardStyled>
             {
-                mapCharacterNames(characterList).map(name => {
-                    return <Character name={name} />
+                mapCharacterNames(characterList).map((name, index) => {
+                    return <Character name={name} bday ={mapCharacterBdays(characterList)[index]}/>
                 })
             }
         </CharacterCardStyled>
