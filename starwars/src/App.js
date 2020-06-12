@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 import './App.css';
-import Character from './components/Character'
+import CharacterCard from './components/CharacterCard'
 import {BASE_URL} from './constants/index'
 
 const App = () => {
@@ -30,7 +30,7 @@ const App = () => {
     <div className="App">
       <h1 className="Header">Characters</h1>
       
-      <Character characterList={characterList}/>
+      <CharacterCard characterList={characterList}/>
     </div>
   );
 }
