@@ -17,11 +17,9 @@ const App = () => {
   useEffect(() => {
     axios.get(`${BASE_URL}`)
       .then(res => {
-        debugger
         characterDataChange(res.data.results);
       })
       .catch(err => {
-        debugger
         console.log(err);
       })
 
@@ -31,7 +29,8 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">Characters</h1>
-      {/* <Character /> */}
+      
+      <Character characterList={characterList}/>
     </div>
   );
 }
